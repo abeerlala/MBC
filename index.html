@@ -5,68 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="MBC Technical Services offers expert solutions in electrical, plumbing, painting, construction and general maintenance across Dubai, UAE.">
+        content="MBC Construction & Interiors offers expert solutions in electrical, plumbing, painting, construction and general maintenance across Dubai, UAE.">
     <meta name="keywords"
-        content="MBC Technical Services, Technical Services Dubai, Construction Services Dubai, House Extension Dubai, House Building Demolition Dubai, Home Renovation Dubai, Interior Decoration, Water Proofing Dubai, Garden Work Dubai, Tiling Work Dubai, Electricity Repair, Wood Polishing Dubai, Electrical Dubai, Plumbing Dubai, HVAC Dubai, Painting Services Dubai, Maintenance Dubai, Refrigerator Maintenance Installation Dubai, Swimming Pool Cleaning And Maintenance Dubai, Plumbing Services Dubai">
+        content="MBC Construction & Interiors, Technical Services Dubai, Construction Services Dubai, House Extension Dubai, House Building Demolition Dubai, Home Renovation Dubai, Interior Decoration, Water Proofing Dubai, Garden Work Dubai, Tiling Work Dubai, Electricity Repair, Wood Polishing Dubai, Electrical Dubai, Plumbing Dubai, HVAC Dubai, Painting Services Dubai, Maintenance Dubai, Refrigerator Maintenance Installation Dubai, Swimming Pool Cleaning And Maintenance Dubai, Plumbing Services Dubai">
     <meta name="author" content="Abeer Khan">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="MBC Technical Services - Expert Technical and Construction Solutions in Dubai" />
+    <meta property="og:title"
+        content="MBC Construction & Interiors - Expert Technical and Construction Solutions in Dubai" />
     <meta property="og:description"
         content="Providing high-quality, reliable technical services including electrical, plumbing, HVAC, painting, and more in Dubai, UAE." />
     <meta property="og:image" content="https://mbc-constructioninteriors.com/Images/" />
-    <meta property="og:image:alt" content="Technician from MBC Technical Services working on site" />
+    <meta property="og:image:alt" content="Technician from MBC Construction & Interiors working on site" />
     <meta property="og:url" content="https://mbc-constructioninteriors.com/" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MBC Technical Services - Dubai's Trusted Maintenance Experts" />
+    <meta name="twitter:title" content="MBC Construction & Interiors - Dubai's Trusted Maintenance Experts" />
     <meta name="twitter:description"
         content="Your go-to provider for professional electrical, HVAC, plumbing, construction, and general technical services in Dubai." />
     <meta name="twitter:image" content="https://mbc-constructioninteriors.com/Images/" />
 
-    <title>MBC Technical Services | Home</title>
+    <title>MBC Construction & Interiors | Home</title>
     <link rel="shortcut icon" href="Images/MBC-Technical-Services.webp" type="image/x-icon">
     <link rel="canonical" href="https://mbc-constructioninteriors.com/" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/eedac787f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
 
     <!-- These Will Be Loaded By script.js:1-72 -->
 
-    <header id="headerMain"></header>
-    <nav id="nav"></nav>
+    <header id="headerMain" data-aos="fade-down" data-aos-once="true"></header>
+    <nav id="nav" data-aos="fade-down" data-aos-once="true"></nav>
     <section class="sideIcons" id="sideIcons"></section>
 
-    <section class="mainSection">
-        <div class="bgLayer" style="background-image: url('Images/Building-Renovation-Services-In-Dubai-Sharjah.jpg');">
-        </div>
+    <section class="mainSection" data-aos="fade-down" data-aos-once="true">
         <div class="bgLayer"
-            style="background-image: url('Images/House-Villa-Extension-Services-In-Dubai-Sharjah.jpg');"></div>
-        <div class="bgLayer" style="background-image: url('Images/Exterior-Painting-Services-In-Dubai-Sharjah.webp');">
+            style="background-image: url('Images/House-Villa-Extension-Services-In-Dubai-Sharjah.jpg');">
+            <div class="innerClipPath">
+                <span class="clipPathHead">Villa Extension & Renovation Services</span>
+            </div>
         </div>
-        <div class="bgLayer" style="background-image: url('Images/Interior-Painting-Services-In-Dubai-Sharjah.jpeg');">
-        </div>
-        <div class="bgLayer"
-            style="background-image: url('Images/Swimming-Pool-Installation-Services-In-Dubai-Sharjah.webp');"></div>
 
-        <div class="mainContainer">
-            <h2>MBC Technical Services LLC.</h2>
-            <p>
-                We specialize in all types of maintenance work, ensuring the best prices in the industry and unmatched
-                service quality. Our team is available 24/7 to meet your needs promptly and efficiently. We offer
-                comprehensive Annual Maintenance Contracts to provide continuous
-                support, preventative care, and peace of mind. With an AMC, your assets and facilities are always in
-                top condition, minimizing downtime and unexpected costs.
-            </p>
+        <div class="bgLayer"
+            style="background-image: url('Images/swimming-pool-maintenance-picture-id1132898837-1170x508.jpg');">
+            <div class="innerClipPath">
+                <span class="clipPathHead">Swimming Pool Installation & Maintenance</span>
+            </div>
         </div>
+
+        <div class="bgLayer" style="background-image: url('Images/Gardening.jpg');">
+            <div class="innerClipPath">
+                <span class="clipPathHead">Gardening Services</span>
+            </div>
+        </div>
+
+        <div class="bgLayer" style="background-image: url('Images/Interior-Painting-Services-In-Dubai.webp');">
+            <div class="innerClipPath">
+                <span class="clipPathHead">Interior/Exterior Painting Services</span>
+            </div>
+        </div>
+
+        <div class="bgLayer bgSpecial" style="background-image: url('Images/building-demolition.jpg');">
+            <div class="innerClipPath">
+                <span class="clipPathHead">Building Demolition Services</span>
+            </div>
+        </div>
+
+        <i id="mainImgRight" class="fa-solid fa-arrow-right"></i>
+        <i id="mainImgLeft" class="fa-solid fa-arrow-left"></i>
     </section>
 
-    <section class="servicesSection">
+
+
+    <!-- <section class="servicesSection">
         <h1>Our Services</h1>
 
         <div class="wrapper">
@@ -92,12 +109,12 @@
             </div>
         </div>
 
-        <a href="services.html" class="viewAll">View All&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
-    </section>
+        <a href="services.html" class="btn">View All&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+    </section> -->
 
-    <section class="infoSection">
+    <section class="infoSection" data-aos="fade-up" data-aos-once="true">
         <div class="infoLeft">
-            <h3 class="leftH3">Why Do People Trust <span style="color: var(--2);">MBC Technical</span> ?</h3>
+            <h3 class="leftH3">Why Do People Trust <span style="color: var(--2);">MBC</span> ?</h3>
 
             <p class="leftP">
                 We will be happy to take on the implementation of a project of any complexity. We guarantee the quality
@@ -105,33 +122,33 @@
                 our work and have many years of experience in the field of repair.
             </p>
 
-            <a style="width:100%;" href="Images/MBCTechnicalServicesProfile.pdf" download="true" class="viewAll"
-                style="text-align: center;">Download Company Profile</a>
+            <a style="text-align: center;" href="Images/MBCTechnicalServicesProfile.pdf" download="true"
+                class="btn">Download Company Profile</a>
         </div>
 
         <div class="infoRight">
             <div class="rightInner">
                 <h4 class="innerIdx">01.</h4>
-                <h3 class="innerHead">Versatility</h3>
-                <p class="innerP">We have a master for every household problem</p>
+                <h3 class="innerHead">Reliability</h3>
+                <p class="innerP">We deliver high-quality results every time.</p>
             </div>
 
             <div class="rightInner">
                 <h4 class="innerIdx">02.</h4>
-                <h3 class="innerHead">Goodwill</h3>
-                <p class="innerP">We ensure that every project is completed on time</p>
+                <h3 class="innerHead">Commitment</h3>
+                <p class="innerP">Your satisfaction is our top priority.</p>
             </div>
 
             <div class="rightInner">
                 <h4 class="innerIdx">03.</h4>
-                <h3 class="innerHead">Expertise</h3>
-                <p class="innerP">We handle all the projects with professionalism</p>
+                <h3 class="innerHead">Precision</h3>
+                <p class="innerP">Every detail is handled with care and expertise.</p>
             </div>
 
             <div class="rightInner">
                 <h4 class="innerIdx">04.</h4>
-                <h3 class="innerHead">Loyality</h3>
-                <p class="innerP">You can trust us for your home improvement needs</p>
+                <h3 class="innerHead">Integrity</h3>
+                <p class="innerP">We stand by our work with transparency.</p>
             </div>
         </div>
     </section>
@@ -140,6 +157,7 @@
 
     <footer id="footerMain"></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 

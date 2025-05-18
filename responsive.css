@@ -11,7 +11,7 @@
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 998px) {
     .navList {
         display: none;
     }
@@ -47,16 +47,24 @@
     .closeNav i {
         display: inline-flex;
     }
-}
 
-@media (max-width: 805px) {
-    .mainContainer {
-        width: 90%;
+    .contactContainer {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .vr {
+        display: none;
+    }
+
+    iframe {
+        width: 600px;
+        height: 400px;
     }
 }
 
 @media (max-width: 786px) {
-
     .toTop,
     .toWtsp {
         height: 39px;
@@ -68,6 +76,21 @@
         gap: 5px;
         right: 7px;
         bottom: 10px;
+    }
+
+    .innerClipPath {
+        height: 40px;
+    }
+
+    .clipPathHead {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 631px) {
+    iframe {
+        width: 400px;
+        height: 250px;
     }
 }
 
@@ -86,10 +109,7 @@
         font-size: 1rem;
         margin-top: 12px;
     }
-}
 
-
-@media (max-width: 603px) {
     .infoSection {
         margin-top: 80px;
     }
@@ -113,10 +133,7 @@
     .leftP {
         width: 100%;
     }
-}
 
-
-@media (max-width: 598px) {
     .headerSec1 {
         display: none;
     }
@@ -129,8 +146,12 @@
         justify-content: center;
     }
 
-    .leftNav h1 {
+    .leftNav h2 {
         display: none;
+    }
+
+    .infoLeft .viewAll {
+        width: 100%;
     }
 }
 
@@ -139,6 +160,27 @@
     .contactContainer form {
         width: 300px;
         padding: 15px;
+    }
+
+    .contactInfo {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .contactInfo i {
+        height: 30px;
+        width: 30px;
+        font-size: .9rem;
+        margin-right: 5px;
+    }
+
+    .inner a {
+        font-size: .7rem;
+    }
+
+    iframe {
+        width: 300px;
+        height: 150px;
     }
 }
 

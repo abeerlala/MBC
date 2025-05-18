@@ -1,3 +1,5 @@
+AOS.init();
+
 // Load Header In All Pages
 
 const header = document.getElementById('headerMain');
@@ -82,17 +84,46 @@ fetch('Components/footer.html')
     })
     .catch(error => console.log('Error loading footer:', error))
 
-// Show the first background
+// Initialize first active
 
 const bgLayers = document.querySelectorAll('.mainSection .bgLayer');
+const leftBtn = document.getElementById("mainImgLeft");
+const rightBtn = document.getElementById("mainImgRight");
 let currentBg = 0;
+let intervalId;
 
 bgLayers[currentBg].classList.add('active');
 
-// Cycle through background images
-
-setInterval(() => {
-    bgLayers[currentBg].classList.remove('active');
-    currentBg = (currentBg + 1) % bgLayers.length;
+function updateActiveSlide(newIndex) {
+    bgLayers.forEach(layer => layer.classList.remove('active'));
+    currentBg = newIndex;
     bgLayers[currentBg].classList.add('active');
-}, 8000);
+}
+
+function startAutoSlide() {
+    clearInterval(intervalId);
+    intervalId = setInterval(() => {
+        updateActiveSlide((currentBg + 1) % bgLayers.length);
+    }, 8000);
+}
+
+startAutoSlide();
+
+rightBtn.addEventListener("click", () => {
+    if (currentBg < bgLayers.length - 1) {
+        updateActiveSlide(currentBg + 1);
+        startAutoSlide();
+    } else if (currentBg = 4) {
+        updateActiveSlide(0);
+        startAutoSlide();
+    }
+});
+
+leftBtn.addEventListener("click", () => {
+    if (currentBg > 0) {
+        updateActiveSlide(currentBg - 1);
+        startAutoSlide();
+    } else if (currentBg == 0) {
+        updateActiveSlide(4);
+    }
+});
