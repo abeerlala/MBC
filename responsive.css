@@ -17,7 +17,11 @@
     }
 
     .menuIcon {
-        display: inline-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        align-self: flex-start;
     }
 
     nav {
@@ -147,7 +151,7 @@
     }
 
     .leftNav h2 {
-        display: none;
+        font-size: 1.1rem;
     }
 
     .infoLeft .viewAll {
@@ -181,6 +185,22 @@
     iframe {
         width: 300px;
         height: 150px;
+    }
+
+    .leftNav h2 {
+        font-size: .8rem;
+    }
+    
+    nav {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .leftNav {
+        gap: 5px;
     }
 }
 
