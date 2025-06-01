@@ -611,18 +611,10 @@ footer a {
 
 /* Services Page Styling */
 
-.servicesMain {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.servicesMain h1 {
+.servicesHead {
     font-size: 1.75rem;
-    margin-top: 100px;
+    margin: 70px 0 50px 0;
+    text-align: center;
 }
 
 .servicesWrapper {
@@ -632,65 +624,53 @@ footer a {
     justify-content: center;
     align-items: center;
     margin: 70px 0 100px 0;
+    gap: 20px;
 }
 
-.outerCard {
-    width: 300px;
+.outerCardHorizontal {
+    width: 600px;
     height: 300px;
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+    display: flex;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: var(--5);
 }
 
-.innerCard {
-    height: 100%;
-    width: 100%;
+.outerCardHorizontal:hover {
+    transform: scale(1.02);
+}
+
+.cardImage {
+    width: 300px;
+    height: 300px;
     background-size: cover;
-    background-repeat: no-repeat;
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: relative;
 }
 
-.innerCardText {
-    height: 60px;
-    width: 100%;
-    text-align: center;
+.cardContent {
+    flex: 1;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    background-color: var(--3);
     color: var(--0);
-    background-color: var(--6);
-    backdrop-filter: blur(2px);
-    border-radius: 2px;
-    position: absolute;
-    transition: height .4s, background-color .3s linear;
-    gap: 10px;
-    padding: 15px;
+    gap: 15px;
 }
 
-.innerCard:hover .innerCardText{
-    height: 100%;
-    background-color: #00000099;
-}
-
-.innerCardText h3 {
+.cardContent h3 {
+    font-size: 1.4rem;
     font-weight: 800;
+    margin: 0;
+    color: var(--2);
 }
 
-.innerCardText p {
-    display: none;
-}
-
-.innerCard:hover .innerCardText p{
-    display: inline-flex;
+.cardContent p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* Gallery Page Styling */
