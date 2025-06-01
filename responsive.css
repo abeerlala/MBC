@@ -1,0 +1,265 @@
+@media (max-width: 1079px) {
+    .infoLeft {
+        align-items: flex-start;
+        width: 600px;
+        text-align: left;
+        margin: 0 0 0 0px;
+    }
+    
+    .leftP {
+        width: 80%;
+    }
+}
+
+@media (max-width: 998px) {
+    .menuIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        align-self: flex-start;
+    }
+    
+    .contactContainer {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .vr {
+        display: none;
+    }
+    
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 862px) {
+    label[for="menu"] {
+        display: block;
+    }
+
+    .navList .closenav {
+        display: block;
+    }
+
+    .navList {
+        flex-direction: column;
+        background-color: var(--3);
+        top: 70px;
+        left: 100%;
+        height: calc(100dvh - 70px);
+        width: 300px;
+        transition: 0.5s;
+        display: none;
+        pointer-events: none;
+        visibility: hidden;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .navLink {
+        background-color: rgba(17, 34, 85, 0.47);
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navLink a {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .navList.activeNavList {
+        left: calc(100vw - 300px);
+        pointer-events: auto;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 786px) {
+    .toTop,
+    .toWtsp {
+        height: 39px;
+        width: 39px;
+        font-size: 1.2rem;
+    }
+    
+    .sideIcons {
+        gap: 5px;
+        right: 7px;
+        bottom: 10px;
+    }
+    
+    .innerClipPath {
+        height: 40px;
+    }
+    
+    .clipPathHead {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 10px 40px;
+        font-size: .9rem;
+    }
+
+    .quoteSecInner h2 {
+        font-size: 2rem;
+    }
+
+    .quoteSecInner p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+    
+    .logo {
+        gap: 5px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+    .navList {
+        width: 100%;
+    }
+
+    .navList.activeNavList {
+        left: 0;
+    }
+
+    nav {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .accordion {
+        font-size: 1.5rem;
+        padding: 15px 20px;
+    }
+
+    .accordionContent {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    .chooseUs li {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .infoSection {
+        margin-top: 80px;
+    }
+
+    .infoRight {
+        flex-direction: column;
+    }
+
+    .rightInner {
+        width: 290px;
+    }
+
+    .infoLeft {
+        width: 290px;
+    }
+
+    .leftH3 {
+        font-size: 1.6rem;
+    }
+
+    .leftP {
+        width: 100%;
+    }
+
+    .headerSec1 {
+        display: none;
+    }
+
+    .hiddenHeaderIcon {
+        display: block;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .infoLeft .viewAll {
+        width: 100%;
+    }
+
+    .quoteSecInner h2 {
+        font-size: 1.8rem;
+    }
+
+    .quoteSecInner p {
+        font-size: .75rem;
+        margin-bottom: 10px;
+    }
+
+    .quoteSecInner ul li {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+
+    .quoteSecInner a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 461px) {
+    .bgSpecial {
+        background-position: -200px;
+    }
+}
+
+@media (max-width: 438px) {
+    .contactContainer form {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .contactInfo {
+        width: 300px;
+        padding: 15px;
+    }
+
+    .contactInfo i {
+        height: 30px;
+        width: 30px;
+        font-size: .9rem;
+        margin-right: 5px;
+    }
+
+    .inner a {
+        font-size: .7rem;
+    }
+
+    iframe {
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .mainContainer {
+        height: 90%;
+    }
+}

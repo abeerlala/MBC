@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://mbc-constructioninteriors.com/sitemap.xml
