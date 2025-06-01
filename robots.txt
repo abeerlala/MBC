@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /contact.html
-
-Sitemap: https://mbc-constructioninteriors.com/sitemap.xml
